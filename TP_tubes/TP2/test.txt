@@ -1,0 +1,3 @@
+Le problème avec l'affichage de pourcentage est que la division est effectuée entre deux entiers (nb_octet et size), ce qui produit un résultat entier plutôt qu'un nombre à virgule flottante. Ensuite, le résultat entier est affecté à la variable "pourcentage" qui est de type "double".
+
+Pour corriger cela, il suffit de convertir l'un des opérandes de la division en nombre à virgule flottante avant de faire la division. Par exemple, vous pouvez modifier la ligne de calcul du pourcentage comme suit:
